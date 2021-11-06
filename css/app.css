@@ -139,32 +139,7 @@ a {
     background-color: #ffffff;
 } 
 
-/*EndOfSlideOutCSS*/
-
-/*StartOfGalleryPageCSS*/
-.gallerycontainer {
-    display: flex;
-    flex: 1 0 21%;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    z-index: 99;
-}
-
-.galleryimage {
-    border-radius: 25px;
-    margin: 10px;
-    z-index: 99
-}
-
-.bigBox {
-    z-index: 100;
-    font-size: 50px;    
-}
-
-
-/*EndOfGalleryPageCSS*/
-
-
+/*EndOfSlideOutCSS*
 /*StartOfNavBarCSS*/
 
 .btn {
@@ -304,3 +279,25 @@ hr.rounded {
 }
 
 /*End of Contact CSS*/
+
+/*Start Of New Gallery CSS*/
+
+.gallerytilecontainer {
+    height: 700px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 500px;
+}
+.newgalleryimage {
+   height: 100%;
+   width:auto;
+}
+.gallerybuttonscontainer{
+    width: 100%;
+    margin: 1%;
+    display: flex;
+    justify-content:space-between;
+}
+
+/*End of New Gallery Css*/
