@@ -1,6 +1,21 @@
 ﻿@import url('open-iconic/font/css/open-iconic-bootstrap.min.css');
 @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
 
+
+/*
+
+Things to sort out for mobile view
+    
+> Gallery image size
+> Route map
+> Sponsor Logos
+
+Things to do:
+
+Add social media links to front page.
+Add paragraphs to Toni's bio
+*/
+
 /*Start Of Global Styling*/
 
 Body {
@@ -110,7 +125,6 @@ a {
     top: 0;
     right: 0;
     bottom: 0;
-    width: 600px;
     overflow-y: auto;
     overflow-x: hidden;
     background-color: white;
@@ -140,164 +154,177 @@ a {
 } 
 
 /*EndOfSlideOutCSS*
-/*StartOfNavBarCSS*/
 
-.btn {
-    background-color: #fca423;
-    color: #fff;
-    /*font-size: 20px;*/
-    font-weight: 800;
-    text-transform: uppercase;
-    position: relative;
-    border-radius: 0 !important;
-    border: none;
-    transition: all 0.3s ease 0s;
-}
+/*Start Of Mobile CSS*/
 
-    .btn:hover,
-    .btn.active:hover {
-        color: #ffffff;
-    }
+    /*End of Mobile CSS*/
 
-    .btn:before {
-        content: "";
-        position: absolute;
-        top: -7px;
-        left: 0;
-        background-color: #2E0014;
-        width: 30%;
-        height: 4px;
+    /*StartOfNavBarCSS*/
+
+    .btn {
+        background-color: #fca423;
+        color: #fff;
+        /*font-size: 20px;*/
+        font-weight: 800;
+        text-transform: uppercase;
+        position: relative;
+        border-radius: 0 !important;
+        border: none;
         transition: all 0.3s ease 0s;
     }
 
-    .btn:after {
-        content: "";
-        position: absolute;
-        bottom: -7px;
-        right: 0;
-        background-color: #2E0014;
-        width: 30%;
-        height: 4px;
-        transition: all 0.3s ease 0s;
+        .btn:hover,
+        .btn.active:hover {
+            color: #ffffff;
+        }
+
+        .btn:before {
+            content: "";
+            position: absolute;
+            top: -7px;
+            left: 0;
+            background-color: #2E0014;
+            max-width: 30%;
+            height: 4px;
+            transition: all 0.3s ease 0s;
+        }
+
+        .btn:after {
+            content: "";
+            position: absolute;
+            bottom: -7px;
+            right: 0;
+            background-color: #2E0014;
+            max-width: 30%;
+            height: 4px;
+            transition: all 0.3s ease 0s;
+        }
+
+        .btn:hover:before,
+        .btn:hover:after,
+        .btn.active:before,
+        .btn.active:after {
+            width: 100%;
+        }
+
+
+    .bio-btn {
+        font-size: 10px;
     }
 
-    .btn:hover:before,
-    .btn:hover:after,
-    .btn.active:before,
-    .btn.active:after {
-        width: 100%;
+    .nav-btn {
+        font-size: 5px;
     }
 
-.bio-btn {
-    font-size: 10px;
-}
 
-.nav-btn {
-    font-size: 20px;
-}
+    .buttonsContainer {
+        display: inline-flex;
+        justify-content: flex-end;
+    }
 
-
-.buttonsContainer {
-    display: inline-flex;
-    justify-content: flex-end;
-}
-
-.buttonMargin{
-    margin-right: 20px;
-}
+    .buttonMargin {
+        margin-right: 20px;
+    }
 
 .navbarimage {
-    width: 225px;
+    
+    width: 100px;
     height: 60px;
     overflow: hidden;
     margin-top: -6px;
 }
 
+    .mobileButtonMargin{
+            margin: 5px;
+    }
 /*EndOfNavBarCSS*/
-
-
-
 /*Start Of Expedition Page CSS*/
-
 .routemap {
     display: block;
     margin: 0 auto;
 }
 
 
-/*End Of Expedition Page CSS*/
+    /*End Of Expedition Page CSS*/
 
-/*Start of FAQ CSS*/
+    /*Start of FAQ CSS*/
 
-.questionbox {
-    background-color: white;
-    padding: 20px;
-    border-radius: 25px;
-    margin-bottom: 20px;    
-}
+    .questionbox {
+        background-color: white;
+        padding: 20px;
+        border-radius: 25px;
+        margin-bottom: 20px;
+    }
 
-.question{    
-    font-size: 24px;
-}
-.answer{
-    font-size: 18px;
-}
+    .question {
+        font-size: 24px;
+    }
 
-
-hr.rounded {
-    border-top: 8px solid #fca423;    
-    border-radius: 5px;
-}
+    .answer {
+        font-size: 18px;
+    }
 
 
-/*End of FAQ CSS*/
+    hr.rounded {
+        border-top: 8px solid #fca423;
+        border-radius: 5px;
+    }
 
 
-/*Start of Contact CSS*/
+    /*End of FAQ CSS*/
 
-.sponsorcontainer {
-    display: inline-flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
 
-.sponsorURL {
-    margin-top: 15px;
-    text-align: center;
-    font-size: 25px;
-    text-decoration: underline;
-    
-}
+    /*Start of Contact CSS*/
 
-.contactDiv {
-    text-align: center;
-    font-size: 22px;    
-}
+    .sponsorcontainer {
+        display: inline-flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
 
-.sponsor {
-    padding: 10px;
-}
+    .sponsorURL {
+        margin-top: 15px;
+        text-align: center;
+        font-size: 25px;
+        text-decoration: underline;
+    }
 
-/*End of Contact CSS*/
+    .contactDiv {
+        text-align: center;
+        font-size: 22px;
+    }
 
-/*Start Of New Gallery CSS*/
+    .sponsor {
+        padding: 10px;
+    }
 
-.gallerytilecontainer {
-    height: 700px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 500px;
-}
+    /*End of Contact CSS*/
+
+    /*Start Of New Gallery CSS*/
+
+    .gallerytilecontainer {
+        height: 700px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 500px;
+    }
+
+    /*.newgalleryimage {
+        height: 100%;
+        width: auto;
+        
+    }*/
+
 .newgalleryimage {
-   height: 100%;
-   width:auto;
+  margin: 1%;
 }
-.gallerybuttonscontainer{
+
+.gallerybuttonscontainer {
     width: 100%;
     margin: 1%;
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
 }
 
-/*End of New Gallery Css*/
+    /*End of New Gallery Css*/
